@@ -1,0 +1,17 @@
+<?php
+$model = Mage::getModel('catalog/product');
+$url = Mage::helper('core/url')->getCurrentUrl(); 
+$urlx=explode('/',$url);
+$id=array_pop($urlx);
+$_product = $model->load($id);
+?>
+<html>
+<body>
+<p class="product-image" style="vertical-align:top;">
+<img title="<?php echo $_product->getName() ?>" alt="<?php echo $_product->getName() ?>" src="<?php echo $_product->getImageUrl() ?>"></p>
+<?php echo $_product->getName() ?>
+<div>
+<?php echo $_product->getShortDescription() ?>	
+</div>
+</body>
+</html> 
