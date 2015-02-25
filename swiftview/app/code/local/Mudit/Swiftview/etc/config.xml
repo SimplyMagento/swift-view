@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Mudit_Swiftview>
+            <version>0.0.1</version>
+		</Mudit_Swiftview>
+    </modules>
+    
+    <!-- we are making changes to the frontend -->
+    <frontend>
+        
+        <!-- we are making changes to the layout -->
+        <layout>
+            
+            <!-- we are adding a new update file -->
+            <updates>
+                
+                <!-- 
+                    this child node name must be
+                    unique throughout Magento
+                -->
+                <mudit_swiftview 
+                         module="Mudit_Swiftview">
+                    
+                    <!-- the name of the layout file we are adding -->
+                    <file>mudit_swiftview.xml</file>
+                    
+                </mudit_swiftview>
+                
+            </updates>
+            
+        </layout>
+    
+<routers>
+            <swiftview>
+                <use>standard</use>
+                <args>
+                    <module>Mudit_Swiftview</module>
+                    <frontName>swiftview</frontName>
+                </args>
+            </swiftview>
+        </routers>    
+    </frontend>
+
+</config>

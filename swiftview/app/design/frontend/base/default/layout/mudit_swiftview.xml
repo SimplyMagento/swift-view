@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+ <swiftview_index_view>
+        <reference name="root">
+         <block type="page/html" name="root" template="mudit_swiftview/final.phtml">
+            </block>
+<!--   <block type="page/html" name="addtocart" template="catalog/product/view/addtocart.phtml">
+          </block>-->
+
+        </reference>
+    </swiftview_index_view>
+
+
+    <catalog_product_view>
+    	<reference name="head">
+            <action method="addItem"><type>js</type><name>jquery/jquery-1.6.4.min.js</name></action>
+            <action method="addItem"><type>js</type><name>jquery/noconflict.js</name></action>
+        </reference>
+<!--  <reference name='product.info'>
+        	<action method='setTemplate'><template>mudit_swiftview/list.phtml</template></action>
+        </reference>
+        <reference name='product.info.addtocart'>
+	        	<action method='setTemplate'><template>mudit_swiftview/list.phtml</template></action>
+	    </reference> -->
+    </catalog_product_view>
+    <catalog_category_default>
+    	<reference name="head">
+            <action method="addItem"><type>js</type><name>jquery/jquery-1.6.4.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/fancybox/jquery.fancybox-1.3.4.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/fancybox/jquery.easing-1.3.pack.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/fancybox/jquery.mousewheel-3.0.4.pack.js</name></action>
+            <action method="addItem"><type>js</type><name>jquery/noconflict.js</name></action>
+            <action method="addCss"><stylesheet>js/fancybox/jquery.fancybox-1.3.4.css</stylesheet></action>
+        </reference>
+    	<reference name='product_list'>
+    		<action method='setTemplate'><template>mudit_swiftview/list.phtml</template></action>
+    	</reference>
+    </catalog_category_default>
+    <catalog_category_layered>
+    	<reference name="head">
+            <action method="addItem"><type>js</type><name>jquery/jquery-1.6.4.min.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/fancybox/jquery.fancybox-1.3.4.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/fancybox/jquery.easing-1.3.pack.js</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/fancybox/jquery.mousewheel-3.0.4.pack.js</name></action>
+            <action method="addItem"><type>js</type><name>jquery/noconflict.js</name></action>
+            <action method="addCss"><stylesheet>js/fancybox/jquery.fancybox-1.3.4.css</stylesheet></action>
+        </reference>
+    	<reference name='product_list'>
+    		<action method='setTemplate'><template>mudit_swiftview/list.phtml</template></action>
+    	</reference>
+    </catalog_category_layered>
+</layout>
